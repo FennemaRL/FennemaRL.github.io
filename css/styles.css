@@ -171,12 +171,11 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after{
 }
 .footer-title{
   font-weight: 450;
-  margin-bottom: 2%;
   padding-top: 2%;
 }
 div .mail{
   width: 100%;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 .mailto{
   -webkit-filter: invert(1);
