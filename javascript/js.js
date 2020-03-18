@@ -1,14 +1,15 @@
-function uncheck (){
-    document.getElementById("menu-btn").checked =false;
+function uncheck() {
+  document.getElementById("menu-btn").checked = false;
+}
+function scroll2Proyects(classdiv) {
+  /*close menu*/
+  let place = document.getElementById(classdiv);
+  uncheck();
+  console.log(place);
+  if (screen.width <= 768) {
+    /* 48em resolution*/
+    setTimeout(() => place.scrollIntoView(), 210);
+  } else {
+    place.scrollIntoView();
   }
-  function scroll2Proyects(classdiv) { /*close menu*/
-    let place =document.getElementById(classdiv);
-    uncheck();
-    if(screen.width <768){ /* 48em resolution*/
-      setTimeout(()=>place.scrollIntoView(), 210);
-    }
-    else{
-      place.scrollIntoView();
-    }
-    place.fadeOut()
-  }
+}
