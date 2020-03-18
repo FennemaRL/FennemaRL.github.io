@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
 
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
 }
-html, body{
-height:100%;
-scroll-behavior: smooth;
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
 }
 body {
   height: 100;
-  font-family: 'Montserrat',sans-serif;
-  background-image: linear-gradient(-180deg, #fff, rgba(232,242,213,0.7));
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(-180deg, #fff, rgba(232, 242, 213, 0.7));
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -19,33 +20,33 @@ body {
   min-height: 95vh;
 }
 section p {
-  color: rgba(0,0,0,0.7);
+  color: rgba(0, 0, 0, 0.7);
   font-size: 90%;
   line-height: 1.8em;
-  width: 70%  ;
+  width: 70%;
   margin-bottom: 0.8%;
 }
-section h1{
+section h1 {
   font-size: 200%;
   font-weight: 700;
-  line-height:1em;
+  line-height: 1em;
   margin: 2% auto 4% auto;
 }
 section h3 span {
   color: #008073;
 }
-section h3{
+section h3 {
   margin: 2% auto 10% auto;
 }
 .divimg {
   width: 30px;
 }
-.titleproject{
+.titleproject {
   text-align: center;
   color: #008073;
   padding-top: 6%;
 }
-ul li{
+ul li {
   list-style-type: none;
 }
 li a {
@@ -55,8 +56,8 @@ li a {
   text-align: left;
   padding: 0 26px;
 }
-.middlepart{
-  background-color: #D6DBD2;
+.middlepart {
+  background-color: #d6dbd2;
   padding-bottom: 25px;
 }
 .card {
@@ -68,7 +69,7 @@ li a {
 }
 .card h4 {
   font-size: 90%;
-  flex:1;
+  flex: 1;
 }
 .card p {
   font-size: 80%;
@@ -81,34 +82,26 @@ li a {
   display: block;
   margin-right: 8%;
 }
-.card div a img{
+.card div a img {
   flex: 1;
 }
-header{
-  padding: 0px ;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-  -webkit-box-shadow: 6px 21px 25px -33px rgba(0,0,0,0.75);
-  -moz-box-shadow: 6px 21px 25px -33px rgba(0,0,0,0.75);
-  box-shadow: 6px 21px 25px -33px rgba(0,0,0,0.75);
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 6px 21px 25px -33px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 21px 25px -33px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 21px 25px -33px rgba(0, 0, 0, 0.75);
   position: relative;
-  display: inline-block;
-  width: 100%;
-}
-header ul {
-  overflow:hidden;
-  
+  display: flex;
+  justify-content: space-between;
 }
 header ul a {
   display: block;
-  justify-content: right;
-  padding: 20px;
   color: black;
   cursor: pointer;
 }
-header .menu{
-  clear: both;
-  max-height: 0;
-  transition: max-height .2s ease-out;
+header .menu {
+  height: 0;
+  transition: height 0.2s ease-out;
 }
 header .logo {
   padding: 16px;
@@ -117,9 +110,8 @@ header .logo {
   filter: invert(1);
 }
 header .menu-icon {
-  padding: 38px 20px;
-  position: relative;
-  float : right;
+  margin: 38px 20px;
+  float: right;
   cursor: pointer;
 }
 header .menu-icon .nav-icon {
@@ -128,61 +120,61 @@ header .menu-icon .nav-icon {
   height: 2px;
   width: 18px;
   position: relative;
-  transition:background .2s ease-in-out;
+  transition: background 0.2s ease-in-out;
 }
-header .menu-icon .nav-icon:before{
+header .menu-icon .nav-icon:before {
   background: #333;
   content: "";
   display: block;
   height: 100%;
   width: 120%;
   position: absolute;
-  transition:all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   top: 5px;
 }
-header .menu-icon .nav-icon:after{
+header .menu-icon .nav-icon:after {
   background: #333;
   content: "";
   display: block;
   height: 100%;
   width: 80%;
   position: absolute;
-  transition:all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   top: -5px;
 }
-header .menu-btn{
-  display:none
+header .menu-btn {
+  display: none;
 }
 header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  height: 120px;
 }
-header .menu-btn:checked ~ .menu-icon .nav-icon{
+header .menu-btn:checked ~ .menu-icon .nav-icon {
   background-color: transparent;
 }
-header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+header .menu-btn:checked ~ .menu-icon .nav-icon:before {
   width: 100%;
   transform: rotate(-45deg);
   top: 0;
 }
-header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+header .menu-btn:checked ~ .menu-icon .nav-icon:after {
   width: 100%;
   transform: rotate(45deg);
   top: 0;
 }
-.footer-title{
+.footer-title {
   font-weight: 450;
   padding-top: 2%;
 }
-div .mail{
+div .mail {
   width: 100%;
   padding-bottom: 10px;
 }
-.mailto{
+.mailto {
   -webkit-filter: invert(1);
   filter: invert(1);
   width: 24px;
 }
-#footerOr{
+#footerOr {
   margin: 1%;
 }
 footer {
@@ -191,12 +183,12 @@ footer {
   background-size: cover;
   color: white;
 }
-.footer-container div{
+.footer-container div {
   text-align: center;
   font-size: 90%;
 }
-.footer-container div input{
-  width:48%;
+.footer-container div input {
+  width: 48%;
   border-radius: 3px;
   color: white;
   background-color: #464646;
@@ -204,17 +196,17 @@ footer {
   padding: 10px 2px 10px 2px;
   border: 0px;
 }
-.footer-container div textarea{
-  width:98%;
+.footer-container div textarea {
+  width: 98%;
   border-radius: 3px;
   color: white;
   background-color: #464646;
   padding-left: 2px;
   border: 0px;
 }
-.footer-container div button{
-  width:48%;
-  color:grey;
+.footer-container div button {
+  width: 48%;
+  color: grey;
   background-color: #464646;
   margin: 5px 0px 10px 0px;
   padding: 10px 2px 10px 2px;
@@ -222,94 +214,112 @@ footer {
   border: 0px;
   cursor: pointer;
 }
- #send{
+#send {
   background-color: #008073;
   color: white;
 }
-@media screen and (max-width:48em){
-  .hero p:first-child{
+@media screen and (max-width: 48em) {
+  .hero p:first-child {
     padding-top: 120px;
   }
   .hero h1 {
     padding-top: 30px;
   }
-  header ul a {
-    padding-left: 25%;    
+  header {
+    display: block;
+  }
+  .menu {
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .menu a {
+    text-align: center;
   }
   header ul a:hover {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
   }
 }
-@media screen and (min-width:48em){
-  .hero{
+@media screen and (min-width: 48em) {
+  .hero {
     padding: 0 90px;
   }
-  .hero p:first-child{
+  .hero p:first-child {
     padding-top: 180px;
   }
-  header li{
-    float: left;
+  header {
+    align-items: center;
   }
-  section h1{
+  .menu {
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  section h1 {
     font-size: 4em;
     line-height: 1.1em;
   }
-  section h3{
+  section h3 {
     font-size: 2em;
   }
   section p {
     font-size: 1em;
     width: 50%;
   }
-  header li a {
-    padding-top: 50px 
-  }
-  header .menu{
-    clear:none;
-    float:right;
-    max-height: none;
-  }
-  header .menu-icon{
+  header .menu-icon {
     display: none;
   }
   header ul a:hover {
-    color: rgba(0,0,0,0.7);
+    color: rgba(0, 0, 0, 0.7);
   }
-  .container{
+  .container {
     padding: 0px 100px;
   }
- .card{
-   width: 70%;
-   padding-left: 10%;
-   display: flex;
- }
- .card img {
-   flex: 1;
-   width: 55%;
- }
- .card .text {
-   flex: 1;
-   display: block;
-   clear: both;
+  ul.project li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .card .text .title{
+  ul.project li:nth-child(2) .card {
+    flex-direction: row-reverse;
+  }
+  .card {
+    width: 70%;
+    display: flex;
+  }
+  .card a img {
+    flex: 1;
+    width: 100%;
+  }
+  .card .text {
+    flex: 1;
+    display: block;
+    margin: 15px;
+  }
+  .card .text .title {
     width: 25vh;
   }
-  .card .text p{
+  .card .text p {
     padding: 20px 6% 0 0;
   }
-  div .mail{
+  .card .text a {
+    display: inline-block;
+  }
+  div .mail {
     margin-left: 25%;
     width: 50%;
   }
-  .footer-container div input{
-    width:22%;
+  .footer-container div input {
+    width: 22%;
   }
-  .footer-container div textarea{
-    width:45%;
+  .footer-container div textarea {
+    width: 45%;
   }
-  .footer-container div button{
-    width:230px;
+  .footer-container div button {
+    width: 230px;
   }
 }
