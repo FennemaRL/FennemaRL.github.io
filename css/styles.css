@@ -17,7 +17,7 @@ body {
   background-attachment: fixed;
 }
 .hero {
-  min-height: 95vh;
+  min-height: 75vh;
 }
 section p {
   color: rgba(0, 0, 0, 0.7);
@@ -36,7 +36,7 @@ section h3 span {
   color: #008073;
 }
 section h3 {
-  margin: 2% auto 10% auto;
+  margin: 10% 0 7%;
 }
 .divimg {
   width: 30px;
@@ -184,9 +184,19 @@ footer {
   filter: invert(1);
   width: 4%;
 }
+.btnCTA{
+  margin-top: 7vh;
+  padding: 15px;
+  font-weight: 600;
+  background-color: #008073;
+  color:white;
+  border-radius: 8px;
+
+
+}
 @media screen and (max-width: 48em) {
   .hero p:first-child {
-    padding-top: 120px;
+    margin-top: 120px;
   }
   .hero h1 {
     padding-top: 30px;
@@ -215,7 +225,12 @@ footer {
   .footer-container div {
     width: 50%;
   }
-  .footer-container div img {
+  .btnCTA{
+    margin-top: 7vh;
+  }
+  .intro{
+    margin-top: 10vh;
+    width: 100%;
   }
 }
 @media screen and (min-width: 48em) {
@@ -223,7 +238,7 @@ footer {
     padding: 0 90px;
   }
   .hero p:first-child {
-    padding-top: 180px;
+    margin-top: 180px;
   }
   header {
     align-items: center;
@@ -243,7 +258,7 @@ footer {
   }
   section p {
     font-size: 1em;
-    width: 50%;
+    width: 60%;
   }
   header .menu-icon {
     display: none;
@@ -284,4 +299,6 @@ footer {
   .card .text a {
     display: inline-block;
   }
+
+  
 }
