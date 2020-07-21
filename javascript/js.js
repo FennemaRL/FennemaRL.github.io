@@ -1,3 +1,9 @@
+const form = document.getElementById('messageForm')
+
+function addWaitIcon(){
+  let icon  = document.getElementById('wait')
+  icon.classList.remove('hidden')
+}
 
 function formSender(event){
   event.preventDefault()
@@ -6,13 +12,10 @@ function formSender(event){
 
   httpRequest.open('POST','https://git.heroku.com/kanban-api-node.git',mail)
   httpRequest.send()
-  
-  window.reload()
+  addWaitIcon()
 }
 
-const form = document.getElementById('messageForm');
 form.addEventListener('submit', formSender);
-
 
 function uncheck() {
   document.getElementById("menu-btn").checked = false

@@ -250,10 +250,45 @@ input[type="submit"]#btnform:hover{
   background-color: #199b8e;
   cursor: pointer;
 }
-
+.complete{
+  display: block;
+  color: #199b8e;
+  text-align: center;
+  font-size: large;
+}
 .footer-container p:first-child{
   font-weight: bolder
 }
+.loadincenter{
+  margin-top: 2vh;
+  width:  94%;
+  display: flex;
+  justify-content: center;
+}
+.hidden {
+  display: none;
+}
+.loader {
+  border: 3px solid #f3f3f3;
+  border-radius: 80%;
+  border-top: 3px solid #199b8e;
+  width: 15px;
+  height: 15px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 @media screen and (max-width: 48em) {
   .hero{
     min-height: 77vh;
