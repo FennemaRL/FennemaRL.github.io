@@ -28,7 +28,7 @@
           <li><a onclick="scroll2Proyects('contactme')">contactame</a></li>
           <li>
             <a
-              href="https://drive.google.com/file/d/1i2MtD9pIE-km0S60CvvVZj9hXSPRiZ5n/view?usp=sharing"
+              href="https://docs.google.com/document/d/1jIXXihIHsvniWLhsZramf3VNJj_pW-1_1KdxOzJ0gDc/edit?usp=sharing"
               target="_blank"
               onclick="uncheck()"
               >curriculum</a
@@ -49,7 +49,7 @@
     </div>
     <div class="middlepart">
       <div class="container">
-        <h2 class="titleproject" id="project">Proyectos</h2>
+        <h2 class="titleproject leftline" id="project">Proyectos</h2>
         <ul class="project">
           <li>
             <div class="card">
@@ -136,9 +136,9 @@
     </div>
     <footer id="contactme">
       <div class="footer-container">
-        <div>
-          <p>
-            contactame via
+          <p class="leftline">
+            Contactame via</p>
+            <p>
           <a
             href="mailto:ld.fennema@gmail.com?subject=contacto%20por%20paginaweb%20:"
             ><img
@@ -148,8 +148,18 @@
           /></a>
             : ld.fennema@gmail.com
           </p>
-        </div>  
-          <p>o</p>
+          <p >o</p>
+          <div class="form">
+            <form id="messageForm">
+              <label for="name">Nombre</label><br>
+              <input type="text" name="name" ><br>
+              <label for="Toreplay">Donde te respondo</label><br>
+              <input type="text" name="mail"><br><br>
+              <label for="name">Deja tu mensaje</label><br>
+              <textarea name="message"></textarea><br>
+              <input type="submit" value="Enviar" id="btnform">
+            </form>
+          </div>
       <div>
     </footer>
   </body>
