@@ -9,7 +9,6 @@ body {
   scroll-behavior: smooth;
 }
 body {
-  height: 100;
   font-family: "Nunito", "Lora", sans-serif;
   background-image: linear-gradient(-180deg, #fff, rgba(232, 242, 213, 0.7));
   background-repeat: no-repeat;
@@ -43,6 +42,7 @@ section h3 {
 .titleproject {
   color: #008073;
   margin-top: auto;
+  margin-left: 90px;
   padding: 3px;
   font-family: "Lora", sans-serif;
 }
@@ -65,7 +65,6 @@ li a {
 }
 .card {
   display: inline-block;
-  margin-top: 3vh;
 }
 .card img {
   width: 90%;
@@ -83,6 +82,7 @@ li a {
 }
 .card .icon {
   margin-left: 20px;
+  display: inline-block;
 }
 .card div a img {
   flex: 1;
@@ -277,7 +277,22 @@ input[type="submit"]#btnform:hover{
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
 }
+.title{
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lora";
+}
 
+.card {
+  margin-top: 5vh;
+}
+.card .text{
+
+  background-color: white;
+  padding: 20px;
+  border-radius: 3px;
+  z-index: 0;
+}
 /* Safari */
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
@@ -329,6 +344,14 @@ input[type="submit"]#btnform:hover{
   header .logo{
     margin-left: 0 ;
   }
+  .card .text p {
+    margin-top: 2vw;
+    font-size: 0.7em;
+  }
+  .card .text span{
+    display: block;
+    margin: 15px 0;
+  }
 }
 @media screen and (min-width: 48em) {
   .hero {
@@ -371,29 +394,49 @@ input[type="submit"]#btnform:hover{
     flex-direction: column;
     align-items: center;
   }
-  ul.project li:nth-child(2) .card {
+  ul.project li:nth-child(even) .card {
     flex-direction: row-reverse;
   }
   .card {
-    width: 70%;
+    min-width: 70%;
     display: flex;
+    margin-top: 5vh;
   }
   .card a img {
-    flex: 1;
+    position: relative;
     width: 100%;
+    z-index: 1;
   }
   .card .text {
-    flex: 1;
+    position: relative;
+    margin: 4vh 0;
     display: block;
-    margin: 15px;
-    font-family: "Lora";
+  
+    min-width: 22vw;
+    max-width: 26vw;
+    max-height: 240px;
   }
-  .card .text .title {
-    width: 25vh;
+  .principalimagecard{
+    max-width: 45vw;
+    min-width: 400px;
   }
   .card .text p {
-    padding: 20px 6% 0 0;
+    margin-top: 2vw;
+    font-size: 0.7em;
   }
+  .card .text span{
+    display: block;
+    margin: 15px 0;
+  }
+  ul.project li:nth-child(odd) .card .text{
+    margin-left: -15vw;
+    padding-left: 17vw;
+  }
+  ul.project li:nth-child(even) .card .text{
+    margin-right: -15vw;
+    padding-right: 14vw;
+  }
+
   input[type="submit"]{
     width: 92.5%;
   }
