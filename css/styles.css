@@ -267,14 +267,21 @@ input[type="submit"]#btnform:hover{
 .footer-container p:first-child{
   font-weight: bolder
 }
-.loadincenter{
+
+.hidden {
+  display: none;
+}
+
+.title{
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lora";
+}
+.loadingcenter{
   margin-top: 2vh;
   width:  94%;
   display: flex;
   justify-content: center;
-}
-.hidden {
-  display: none;
 }
 .loader {
   border: 3px solid #f3f3f3;
@@ -285,17 +292,10 @@ input[type="submit"]#btnform:hover{
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
 }
-.title{
-  display: flex;
-  justify-content: space-between;
-  font-family: "Lora";
-}
-
 .card {
   margin-top: 5vh;
 }
 .card .text{
-
   background-color: white;
   padding: 20px;
   border-radius: 3px;
