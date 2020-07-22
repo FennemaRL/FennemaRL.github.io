@@ -449,6 +449,6 @@ input[type="submit"]#btnform:hover{
   }
 
   input[type="submit"]{
-    width: 92.5%;
+    width: 25%;
   }
 }
