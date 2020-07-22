@@ -46,6 +46,9 @@ section h3 {
   padding: 3px;
   font-family: "Lora", sans-serif;
 }
+h3.leftline{
+  display: inline-block;
+}
 .leftline{
   border-left: 4px solid rgba(0,51,46,0.73);
 }
@@ -351,6 +354,9 @@ input[type="submit"]#btnform:hover{
   .card .text span{
     display: block;
     margin: 15px 0;
+  }
+  .form form {
+    width: 80vw;
   }
 }
 @media screen and (min-width: 48em) {
