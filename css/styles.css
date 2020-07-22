@@ -39,12 +39,16 @@ section h3 {
 .divimg {
   width: 30px;
 }
-.titleproject {
+.titlesection {
   color: #008073;
   margin-top: auto;
   margin-left: 90px;
   padding: 3px;
   font-family: "Lora", sans-serif;
+  text-align: left;
+}
+.footer-container .titlesection {
+  color: white;
 }
 h3.leftline{
   display: inline-block;
@@ -183,18 +187,20 @@ footer {
 .footer-container {
   width: 100%;
   min-height: 60px;
-  text-align: center;
+  padding: 20px 0;
 }
 .footer-container p {
   font-size: 0.8em;
   font-weight: 250;
   padding: 12px;
+  text-align: center;
 }
 .footer-container p a img {
   filter: invert(1);
   width: 12px;
 }
 .footer-container p a {
+  
   display: inline-block;
   margin-top: 4px;
 }
@@ -356,7 +362,7 @@ input[type="submit"]#btnform:hover{
     margin: 15px 0;
   }
   .form form {
-    width: 80vw;
+    width: 90vw;
   }
 }
 @media screen and (min-width: 48em) {
