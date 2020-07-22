@@ -309,7 +309,7 @@ input[type="submit"]#btnform:hover{
     min-height: 77vh;
   }
   .hero p:first-child {
-    margin-top: 120px;
+    margin-top: 10vh;
   }
   .hero h1 {
     padding-top: 30px;
