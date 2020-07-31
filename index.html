@@ -150,18 +150,18 @@
                 src="/img/iconmonstr-email-1.svg"
                 alt="github-link"
                 class="mailto"
-              /></a>: ld.fennema@gmail.com </p>
+              /></a> : ld.fennema@gmail.com </p>
               <p>o</p>
           <div class="form">
             <form id="messageForm">
-              <label for="name">Nombre</label><br>
-              <input type="text" name="name" ><br>
+              <label for="name" >Nombre</label><br>
+              <input type="text" name="name" required><br>
               <label for="Toreplay">Mail a responder </label><br>
-              <input type="text" name="mail"><br><br>
+              <input type="email" name="mail" required><br><br>
               <label for="name">Deja tu mensaje</label><br>
-              <textarea name="message"></textarea><br>
+              <textarea name="message" required></textarea><br>
               <div class="loadingcenter">
-              <div class="loader hidden" id="wait"></div>
+              <div class="hidden" id="wait"></div>
               </div >
               <input type="submit" value="Enviar" id="btnform">
             </form>
