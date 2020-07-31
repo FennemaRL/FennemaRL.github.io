@@ -10,7 +10,10 @@ let divMailResponse  = document.getElementById('wait')
   if(res.ok)
     okResponse()
   else{
+
+    console.log(res)
     let err  = await res.json()
+    console.log(err)
     errResponse(err)
   }
 }
@@ -35,7 +38,7 @@ function formSender(event){
   event.preventDefault()
   let mail = Object.values(event.target).reduce((obj,field) => { obj[field.name] = field.value; return obj }, {})
 
-  fetch('https://git.heroku.com/kanban-api-node.git/sendMail',{
+  fetch('https://kanban-api-node.herokuapp.com/sendmail',{
     method: 'POST',
     body: JSON.stringify(mail),
     headers:{
@@ -44,8 +47,10 @@ function formSender(event){
   }).then(res =>responseHandler(res))
     .catch( (err) => console.log('Hubo un problema con la petición Fetch:' + err.message) )
 
+  
   addWaitIcon()
 }
+
 
 form.addEventListener('submit', formSender);
 
