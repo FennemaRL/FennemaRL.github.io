@@ -318,18 +318,7 @@ button#btnform:hover{
 }
 form > label:hover::after{
   content: 'Este campo es requerido';
-  position: absolute;
-  left: 16vw;
-  top: 1px;
   padding: 4px;
-}
-form > label:nth-child(5):hover::after{
-  top: 63px;
-  left: 20vw;
-}
-form > label:nth-child(10):hover::after{
-  top: 140px;
-  left: 20vw;
 }
 
 @-webkit-keyframes spin {
@@ -401,15 +390,6 @@ form > label:nth-child(10):hover::after{
   }
   .form form {
     width: 90vw;
-  }
-  form > label:hover::after{
-    left: 18vw;
-  }
-  form > label:nth-child(5):hover::after{
-    left: 28vw;
-  }
-  form > label:nth-child(10):hover::after{
-    left: 28vw;
   }
 }
 @media screen and (min-width: 48em) {
