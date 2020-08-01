@@ -319,17 +319,17 @@ button#btnform:hover{
 form > label:hover::after{
   content: 'Este campo es requerido';
   position: absolute;
-  left: 14vw;
+  left: 16vw;
   top: 1px;
   padding: 4px;
 }
 form > label:nth-child(5):hover::after{
   top: 63px;
-  left: 18vw;
+  left: 20vw;
 }
 form > label:nth-child(10):hover::after{
   top: 140px;
-  left: 18vw;
+  left: 20vw;
 }
 
 @-webkit-keyframes spin {
@@ -403,19 +403,12 @@ form > label:nth-child(10):hover::after{
     width: 90vw;
   }
   form > label:hover::after{
-    content: 'Este campo es requerido';
-    position: absolute;
     left: 18vw;
-    top: 1px;
-    padding: 4px;
-    transition: all 0.3s ease;
   }
   form > label:nth-child(5):hover::after{
-    top: 63px;
     left: 28vw;
   }
   form > label:nth-child(10):hover::after{
-    top: 140px;
     left: 28vw;
   }
 }
