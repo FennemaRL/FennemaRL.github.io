@@ -360,9 +360,18 @@ button#btnform:hover{
   header .logo{
     margin-left: 0 ;
   }
+  .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
   .card .text p {
     margin-top: 2vw;
     font-size: 0.7em;
+  }
+  .card > a {
+    text-align: center;
   }
   .card .text span{
     display: block;
