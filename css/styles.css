@@ -314,6 +314,7 @@ button#btnform:hover{
 .requiredF::after{
   content: ' *';
   color: #ea9fae;
+  transition: all 0.3s ease;
 }
 form > label:hover::after{
   content: 'Este campo es requerido';
@@ -321,7 +322,6 @@ form > label:hover::after{
   left: 14vw;
   top: 1px;
   padding: 4px;
-  transition: all 0.3s ease;
 }
 form > label:nth-child(5):hover::after{
   top: 63px;
