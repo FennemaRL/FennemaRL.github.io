@@ -220,6 +220,7 @@ footer {
   text-align: left;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 .form form {
   width: 60vw;
@@ -310,6 +311,27 @@ button#btnform:hover{
   color: #ea9fae;
 }
 /* Safari */
+.requiredF::after{
+  content: ' *';
+  color: #ea9fae;
+}
+form > label:hover::after{
+  content: 'Este campo es requerido';
+  position: absolute;
+  left: 14vw;
+  top: 1px;
+  padding: 4px;
+  transition: all 0.3s ease;
+}
+form > label:nth-child(5):hover::after{
+  top: 63px;
+  left: 18vw;
+}
+form > label:nth-child(10):hover::after{
+  top: 140px;
+  left: 18vw;
+}
+
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
@@ -379,6 +401,22 @@ button#btnform:hover{
   }
   .form form {
     width: 90vw;
+  }
+  form > label:hover::after{
+    content: 'Este campo es requerido';
+    position: absolute;
+    left: 18vw;
+    top: 1px;
+    padding: 4px;
+    transition: all 0.3s ease;
+  }
+  form > label:nth-child(5):hover::after{
+    top: 63px;
+    left: 28vw;
+  }
+  form > label:nth-child(10):hover::after{
+    top: 140px;
+    left: 28vw;
   }
 }
 @media screen and (min-width: 48em) {
