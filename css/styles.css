@@ -245,16 +245,16 @@ textarea {
   resize: none;
   height: 45px;
 }
-input[type="submit"]{
+button#btnform{
   margin: 30px 0;
-  width: 99%;
+  width: 95%;
   padding: 10px;
   border-radius: 10px;
   background-color: #008073;
   color: white;
   border: 1px
 }
-input[type="submit"]#btnform:hover{
+button#btnform:hover{
   background-color: #199b8e;
   cursor: pointer;
 }
@@ -457,7 +457,7 @@ input[type="submit"]#btnform:hover{
     padding-right: 14vw;
   }
 
-  input[type="submit"]{
+  button#btnform{
     width: 25%;
   }
 }
